@@ -7,6 +7,7 @@ const sequelize = new Sequelize('database', 'user', 'password', {
     logging: false,
     storage: 'user.sqlite',
 });
+
 const Tags = sequelize.define('tags', {
     userId: {
         type: Sequelize.INTEGER,
